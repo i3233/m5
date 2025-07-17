@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset=UTF-8meta name=viewport" content="width=device-width, initial-scale=10
+    <title>库存管理</title>
+    <link rel="stylesheet" href="../../css/pages.css></head>
+<body>
+    <div class=page-container">
+        <div class="page-header>
+            <h1>库存管理</h1>
+            <div class=header-actions>
+                <button class=btn btn-primary><iclass=fas fa-plus"></i> 新增商品</button>
+                <button class=btn btn-secondary><i class="fas fa-download"></i> 导出库存</button>
+            </div>
+        </div>
+        
+        <div class="search-bar">
+            <input type=text placeholder="搜索商品名称、SKU..." class="search-input">
+            <select class="filter-select>
+                <option>全部仓库</option>
+                <option>上海仓</option>
+                <option>深圳仓</option>
+                <option>广州仓</option>
+            </select>
+            <button class="btn btn-search">搜索</button>
+        </div>
+
+        <div class="table-container">
+            <table class="data-table>
+                <thead>
+                    <tr>
+                        <th>SKU</th>
+                        <th>商品名称</th>
+                        <th>仓库</th>
+                        <th>库存数量</th>
+                        <th>安全库存</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SKU001</td>
+                        <td>iPhone 15 Pro</td>
+                        <td>上海仓</td>
+                        <td>150</td>
+                        <td>50</td>
+                        <td><span class="status-badge status-normal>正常</span></td>
+                        <td>
+                            <button class="btn-link">查看</button>
+                            <button class="btn-link">调整</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SKU002</td>
+                        <td>MacBook Air</td>
+                        <td>深圳仓</td>
+                        <td>25</td>
+                        <td>30</td>
+                        <td><span class="status-badge status-low>库存不足</span></td>
+                        <td>
+                            <button class="btn-link">查看</button>
+                            <button class="btn-link">补货</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SKU003</td>
+                        <td>AirPods Pro</td>
+                        <td>广州仓</td>
+                        <td>200</td>
+                        <td>100</td>
+                        <td><span class="status-badge status-normal>正常</span></td>
+                        <td>
+                            <button class="btn-link">查看</button>
+                            <button class="btn-link">调整</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html> 

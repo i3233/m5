@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset=UTF-8meta name=viewport" content="width=device-width, initial-scale=10
+    <title>工单管理</title>
+    <link rel="stylesheet" href="../../css/pages.css></head>
+<body>
+    <div class=page-container">
+        <div class="page-header>
+            <h1>工单管理</h1>
+            <div class=header-actions>
+                <button class=btn btn-primary><iclass=fas fa-plus"></i> 新建工单</button>
+                <button class=btn btn-secondary><i class="fas fa-download"></i> 导出</button>
+            </div>
+        </div>
+        
+        <div class="search-bar">
+            <input type=text placeholder="搜索工单号、客户名称..." class="search-input">
+            <select class="filter-select>
+                <option>全部状态</option>
+                <option>待处理</option>
+                <option>处理中</option>
+                <option>已完成</option>
+                <option>已关闭</option>
+            </select>
+            <button class="btn btn-search">搜索</button>
+        </div>
+
+        <div class="table-container">
+            <table class="data-table>
+                <thead>
+                    <tr>
+                        <th>工单号</th>
+                        <th>客户名称</th>
+                        <th>问题类型</th>
+                        <th>优先级</th>
+                        <th>状态</th>
+                        <th>创建时间</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TKT202312001</td>
+                        <td>上海贸易公司</td>
+                        <td>物流跟踪</td>
+                        <td><span class="priority-badge priority-high>高</span></td>
+                        <td><span class="status-badge status-pending>待处理</span></td>
+                        <td>2023-12                   <td>
+                            <button class="btn-link">查看</button>
+                            <button class="btn-link">处理</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>TKT202312002</td>
+                        <td>深圳物流集团</td>
+                        <td>费用咨询</td>
+                        <td><span class="priority-badge priority-medium>中</span></td>
+                        <td><span class="status-badge status-processing>处理中</span></td>
+                        <td>2023-12                   <td>
+                            <button class="btn-link">查看</button>
+                            <button class="btn-link">处理</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>TKT202311003</td>
+                        <td>广州进出口公司</td>
+                        <td>报关问题</td>
+                        <td><span class="priority-badge priority-low>低</span></td>
+                        <td><span class="status-badge status-completed>已完成</span></td>
+                        <td>2023-11                   <td>
+                            <button class="btn-link">查看</button>
+                            <button class="btn-link">关闭</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html> 

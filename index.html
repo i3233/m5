@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跨境物流后台管理系统</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tabs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <!-- 左侧菜单栏 -->
+    <aside class="sidebar">
+        <div class="logo">
+            <i class="fas fa-shipping-fast"></i> 物流管理系统
+        </div>
+        <nav class="menu">
+            <div class="menu-group">
+                <div class="menu-header"><i class="fas fa-chart-line"></i> 销售中心</div>
+                <ul class="submenu">
+                    <li><a href="pages/sales/orders.html" data-title="订单管理">订单管理</a></li>
+                    <li><a href="pages/sales/customers.html" data-title="客户管理">客户管理</a></li>
+                </ul>
+            </div>
+            <div class="menu-group">
+                <div class="menu-header"><i class="fas fa-headset"></i> 客服中心</div>
+                <ul class="submenu">
+                    <li><a href="pages/service/tickets.html" data-title="工单管理">工单管理</a></li>
+                    <li><a href="pages/service/faq.html" data-title="常见问题">常见问题</a></li>
+                </ul>
+            </div>
+            <div class="menu-group">
+                <div class="menu-header"><i class="fas fa-cogs"></i> 操作中心</div>
+                <ul class="submenu">
+                    <li><a href="pages/operations/shipments.html" data-title="运单管理">运单管理</a></li>
+                    <li><a href="pages/operations/tracking.html" data-title="物流跟踪">物流跟踪</a></li>
+                </ul>
+            </div>
+            <div class="menu-group">
+                <div class="menu-header"><i class="fas fa-warehouse"></i> 国内仓管理</div>
+                <ul class="submenu">
+                    <li><a href="pages/warehouse/inventory.html" data-title="库存管理">库存管理</a></li>
+                    <li><a href="pages/warehouse/inbound.html" data-title="入库管理">入库管理</a></li>
+                </ul>
+            </div>
+            <div class="menu-group">
+                <div class="menu-header"><i class="fas fa-globe"></i> 后段操作中心</div>
+                <ul class="submenu">
+                    <li><a href="pages/backend/customs.html" data-title="报关管理">报关管理</a></li>
+                    <li><a href="pages/backend/compliance.html" data-title="合规管理">合规管理</a></li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+    <!-- 右侧内容区 -->
+    <main class="main-content">
+        <!-- 顶部标签页 -->
+        <div class="tabs-container">
+            <div class="tabs" id="tabs-bar">
+                <!-- 动态生成标签页 -->
+            </div>
+            <div class="tabs-actions">
+                <button id="closeAllTabs" title="关闭所有标签页"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        <!-- iframe内容区 -->
+        <div class="content-area">
+            <iframe id="mainFrame" name="mainFrame" src="pages/welcome.html" frameborder="0"></iframe>
+        </div>
+    </main>
+</div>
+<script src="js/tabs.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html> 

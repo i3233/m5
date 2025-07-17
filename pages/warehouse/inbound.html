@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset=UTF-8meta name=viewport" content="width=device-width, initial-scale=10
+    <title>入库管理</title>
+    <link rel="stylesheet" href="../../css/pages.css></head>
+<body>
+    <div class=page-container">
+        <div class="page-header>
+            <h1>入库管理</h1>
+            <div class=header-actions>
+                <button class=btn btn-primary><iclass=fas fa-plus"></i> 新建入库单</button>
+                <button class=btn btn-secondary><i class="fas fa-download"></i> 导出记录</button>
+            </div>
+        </div>
+        
+        <div class="search-bar">
+            <input type=text placeholder="搜索入库单号、供应商..." class="search-input">
+            <select class="filter-select>
+                <option>全部状态</option>
+                <option>待入库</option>
+                <option>入库中</option>
+                <option>已完成</option>
+            </select>
+            <button class="btn btn-search">搜索</button>
+        </div>
+
+        <div class="table-container">
+            <table class="data-table>
+                <thead>
+                    <tr>
+                        <th>入库单号</th>
+                        <th>供应商</th>
+                        <th>商品信息</th>
+                        <th>入库状态</th>
+                        <th>预计入库时间</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>IN202312001</td>
+                        <td>苹果官方</td>
+                        <td>iPhone15                   <td><span class="status-badge status-pending>待入库</span></td>
+                        <td>2023-12-25</td>
+                        <td>
+                            <button class="btn-link">查看</button>
+                            <button class="btn-link">确认入库</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>IN202312002</td>
+                        <td>华为官方</td>
+                        <td>Mate 60 Pro 50台</td>
+                        <td><span class="status-badge status-processing>入库中</span></td>
+                        <td>2023-12-26</td>
+                        <td>
+                            <button class="btn-link">查看</button>
+                            <button class="btn-link">完成入库</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>IN202312003</td>
+                        <td>小米官方</td>
+                        <td>小米14 200台</td>
+                        <td><span class="status-badge status-completed>已完成</span></td>
+                        <td>2023-12-24</td>
+                        <td>
+                            <button class="btn-link">查看</button>
+                            <button class="btn-link">打印单据</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html> 

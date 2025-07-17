@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset=UTF-8meta name=viewport" content="width=device-width, initial-scale=10
+    <title>运单管理</title>
+    <link rel="stylesheet" href="../../css/pages.css></head>
+<body>
+    <div class=page-container">
+        <div class="page-header>
+            <h1>运单管理</h1>
+            <div class=header-actions>
+                <button class=btn btn-primary><iclass=fas fa-plus"></i> 新建运单</button>
+                <button class=btn btn-secondary><i class="fas fa-download"></i> 批量导出</button>
+            </div>
+        </div>
+        
+        <div class="search-bar">
+            <input type=text placeholder="搜索运单号、客户名称..." class="search-input">
+            <select class="filter-select>
+                <option>全部状态</option>
+                <option>已创建</option>
+                <option>运输中</option>
+                <option>已签收</option>
+                <option>异常</option>
+            </select>
+            <button class="btn btn-search">搜索</button>
+        </div>
+
+        <div class="table-container">
+            <table class="data-table>
+                <thead>
+                    <tr>
+                        <th>运单号</th>
+                        <th>客户名称</th>
+                        <th>货物信息</th>
+                        <th>运输状态</th>
+                        <th>预计到达</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SHIP202312001</td>
+                        <td>上海贸易公司</td>
+                        <td>电子产品 2箱</td>
+                        <td><span class="status-badge status-shipping>运输中</span></td>
+                        <td>2023-12-25</td>
+                        <td>
+                            <button class="btn-link">查看</button>
+                            <button class="btn-link">跟踪</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SHIP202312002</td>
+                        <td>深圳物流集团</td>
+                        <td>服装 5箱</td>
+                        <td><span class="status-badge status-created>已创建</span></td>
+                        <td>2023-12-28</td>
+                        <td>
+                            <button class="btn-link">查看</button>
+                            <button class="btn-link">发货</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SHIP202311003</td>
+                        <td>广州进出口公司</td>
+                        <td>机械零件 1箱</td>
+                        <td><span class="status-badge status-delivered>已签收</span></td>
+                        <td>2023-12-20</td>
+                        <td>
+                            <button class="btn-link">查看</button>
+                            <button class="btn-link">确认</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html> 

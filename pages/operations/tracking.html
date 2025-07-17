@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset=UTF-8meta name=viewport" content="width=device-width, initial-scale=10
+    <title>物流跟踪</title>
+    <link rel="stylesheet" href="../../css/pages.css></head>
+<body>
+    <div class=page-container">
+        <div class="page-header>
+            <h1>物流跟踪</h1>
+            <div class=header-actions>
+                <button class=btn btn-primary><iclass=fas fa-search"></i> 批量查询</button>
+                <button class=btn btn-secondary><i class="fas fa-download"></i> 导出轨迹</button>
+            </div>
+        </div>
+        
+        <div class="search-bar">
+            <input type=text placeholder="输入运单号进行查询..." class="search-input">
+            <button class="btn btn-search">查询</button>
+        </div>
+
+        <div class="tracking-container">
+            <div class="tracking-info>
+                <h3>运单号：SHIP202312001</h3
+                <p>客户：上海贸易公司 | 货物：电子产品 2/p>
+            </div>
+            
+            <div class=tracking-timeline>
+                <div class="timeline-item completed>
+                    <div class="timeline-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>已签收</h4>
+                        <p>223                   <p>上海市浦东新区张江高科技园区</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item completed>
+                    <div class="timeline-icon">
+                        <i class=fas fa-truck"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>派送中</h4>
+                        <p>223                   <p>上海市浦东新区配送中心</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item completed>
+                    <div class="timeline-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>到达目的地</h4>
+                        <p>223                   <p>上海市浦东新区分拣中心</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item completed>
+                    <div class="timeline-icon">
+                        <i class=fas fa-plane"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>运输中</h4>
+                        <p>223                   <p>深圳宝安国际机场</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item completed>
+                    <div class="timeline-icon">
+                        <i class=fas fa-box                   </div>
+                    <div class="timeline-content">
+                        <h4>已发货</h4>
+                        <p>223                   <p>深圳市宝安区仓库</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

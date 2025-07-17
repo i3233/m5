@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset=UTF-8meta name=viewport" content="width=device-width, initial-scale=10
+    <title>合规管理</title>
+    <link rel="stylesheet" href="../../css/pages.css></head>
+<body>
+    <div class=page-container">
+        <div class="page-header>
+            <h1>合规管理</h1>
+            <div class=header-actions>
+                <button class=btn btn-primary><iclass=fas fa-plus"></i> 新增合规检查</button>
+                <button class=btn btn-secondary><i class="fas fa-download"></i> 导出报告</button>
+            </div>
+        </div>
+        
+        <div class="search-bar">
+            <input type=text placeholder="搜索检查编号、货物名称..." class="search-input">
+            <select class="filter-select>
+                <option>全部状态</option>
+                <option>待检查</option>
+                <option>检查中</option>
+                <option>已通过</option>
+                <option>不通过</option>
+            </select>
+            <button class="btn btn-search">搜索</button>
+        </div>
+
+        <div class="table-container">
+            <table class="data-table>
+                <thead>
+                    <tr>
+                        <th>检查编号</th>
+                        <th>货物名称</th>
+                        <th>检查类型</th>
+                        <th>检查状态</th>
+                        <th>检查时间</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>COM202312001</td>
+                        <td>电子产品</td>
+                        <td>安全合规</td>
+                        <td><span class="status-badge status-pending>待检查</span></td>
+                        <td>2023-12-25</td>
+                        <td>
+                            <button class="btn-link">查看</button>
+                            <button class="btn-link">开始检查</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>COM202312002</td>
+                        <td>服装鞋帽</td>
+                        <td>质量合规</td>
+                        <td><span class="status-badge status-processing>检查中</span></td>
+                        <td>2023-12-26</td>
+                        <td>
+                            <button class="btn-link">查看</button>
+                            <button class="btn-link">完成检查</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>COM202312003</td>
+                        <td>机械设备</td>
+                        <td>技术合规</td>
+                        <td><span class="status-badge status-approved>已通过</span></td>
+                        <td>2023-12-24</td>
+                        <td>
+                            <button class="btn-link">查看</button>
+                            <button class="btn-link">打印报告</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html> 
